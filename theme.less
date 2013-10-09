@@ -1,0 +1,444 @@
+@import 'less/config.less'; // configuration variables
+
+
+@font-face {
+  font-family: Yanone Kaffeesatz; 
+    src: url('fonts/YanoneKaffeesatz-Regular.eot');
+    src: local("Yanone Kaffeesatz"), url('fonts/YanoneKaffeesatz-Regular.ttf');
+}
+
+@font-face { 
+  font-family: News Cycle; 
+    src: url('fonts/NewsCycle-Regular.eot');
+    src: local("News Cycle"), url('fonts/NewsCycle-Regular.ttf');
+} 
+
+html { 
+  height: 100%;
+}
+
+* { 
+  margin: 0;
+  padding: 0;
+}
+
+.content article, .content aside, .content figure, .content footer, .content header, .content hgroup, .content nav, .content section { 
+  display:block;
+}
+
+body { 
+  background: #FFF url(images/back.jpg) no-repeat center fixed;
+  color: #DDD;
+}
+
+.content p { 
+  padding: 0 0 20px 0;
+  line-height: 1.7em;
+}
+
+.content img { 
+  border: 0;
+}
+
+.content blockquote { 
+  margin: 20px 0; 
+  padding: 10px 20px 0 20px;
+  border: 1px solid #E5E5DB;
+  background: #FFF;
+}
+
+.content ul { 
+  margin: 2px 0 22px 17px;
+}
+
+.content ol { 
+  margin: 8px 0 22px 20px;
+}
+
+.content ol li { 
+  margin: 0 0 11px 0;
+}
+
+.left { 
+  float: left;
+  width: auto;
+  margin-right: 10px;
+}
+
+.right { 
+  float: right; 
+  width: auto;
+  margin-left: 10px;
+}
+
+.center { 
+  display: block;
+  text-align: center;
+  margin: 20px auto;
+}
+
+.main, nav, #container, .logo, .home_content, .inner_content, footer { 
+  margin-left: auto; 
+  margin-right: auto;
+}
+
+.main {
+  margin: 50px auto;
+  max-width: 980px;
+  padding-bottom: 30px;
+}
+
+.main header { 
+  background: transparent;
+}
+
+.logo_container { 
+  max-width: 724px;
+  float: left;
+  color: #888;
+  padding: 20px 0 30px 20px;
+  margin-bottom: 20px;
+}
+
+.logo a{
+  text-transform: lowercase;
+}
+
+.logo_container h1, .logo_container h2 { 
+  font: normal 250% 'News Cycle', arial, sans-serif;
+  border-bottom: 0;
+  margin: 0;
+}
+
+
+
+.logo a:hover, .logo_text a:hover .logo_colour { 
+  color: #FFF;
+}
+
+.logo_text h2 { 
+  font-size: 110%;
+  padding: 0 0 0 0;
+  color: #FFF;
+}
+
+
+.logo a, .logo_text h1, .logo_text h1 a, .logo_text h1 a:hover {
+  padding: 0;
+  color: @color1;
+  text-decoration: none;
+}
+
+.logo, .logo_text h1 a .logo_colour {
+  color: @color1;
+}
+
+.main nav { 
+  background: transparent url(images/transparent.png);
+  color: #FFF;
+  font: normal .80em arial, sans-serif;
+  margin: 0 auto 20px auto;
+  max-width: 980px;
+  clear: both;
+} 
+
+.menu_container { 
+  margin: 0 auto 0 auto;
+  max-width: 980px;
+}
+
+/* Theming the menu */
+.menu_container ul{
+  float: right;
+}
+
+.menu_container ul ul {
+  background: @color1;
+  margin-top: 5px;
+  padding-bottom: 15px;
+}
+
+.menu_container ul li a {
+  color: #FFF;
+  font: 170% 'Yanone Kaffeesatz', arial, sans-serif;
+  margin-right: 2px;
+  padding:7px 20px 6px 20px;
+  text-decoration: none;
+  text-shadow: 1px 1px #000;
+}
+
+.menu_container ul li a:hover,.menu_container ul li a:focus {
+  color: @color1;
+  text-shadow: none;
+}
+
+.menu_container ul ul li a:hover,.menu_container ul ul li a:focus {
+  color: #222;
+  text-shadow: none;
+}
+
+
+.sidebar_container { 
+  float: right;
+  padding-top: 20px;
+  width: 100%;
+}
+
+.content {
+  float: left;
+  margin: 0 0 15px 0;
+  padding: 0;
+  text-align: left;
+  width: 100%
+}
+
+.home_content, .inner_content { 
+  background: transparent url(images/transparent.png);
+  margin: 0px auto 0 auto;
+  overflow: hidden;
+  padding: 25px;
+  max-width: 980px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+} 
+
+
+@media screen and (min-width: 940px) {
+  .sidebar_container {
+    width: 280px;
+  }
+
+  .content {
+    max-width: 600px;
+  }
+
+}
+  
+.sidebar h1, .sidebar h2, .sidebar h3, .content h1 { 
+  color: #FFF;
+  margin: 0 1px;
+  padding: 0 15px 20px 0;
+  text-shadow:  #000 1px 1px;
+}
+
+.sidebar h1, .sidebar h2, .sidebar h3 { 
+  color: #FFF;
+  padding: 0 15px 14px 0;
+}
+
+.sidebar ul { 
+  margin: 0 0 15px 0;
+} 
+
+.sidebar li a, .sidebar li a:hover { 
+  color: #DDD;
+  text-decoration: none;
+} 
+
+.sidebar li a:hover { 
+  text-decoration: underline;
+} 
+
+.sidebar_item, .content_item { 
+  padding: 15px 0;
+}
+
+
+.paperclip { 
+  float: left;
+  margin: -15px 0 -60px -40px;
+  position: relative; 
+  vertical-align: middle; 
+  z-index: 0;
+}
+
+.main footer { 
+  background: transparent url(images/transparent.png);
+  color: #FFF;
+  font: 140% 'Yanone Kaffeesatz', arial, sans-serif;
+  margin-top: 25px;
+  padding: 5px 0 0px 0;
+  text-align: center; 
+  text-shadow: 1px 1px #000;
+  max-width: 980px;
+}
+
+.main footer a { 
+  color: #FFF;
+  text-decoration: none;
+}
+
+.main footer a:hover { 
+  color: #FFF;
+  text-decoration: underline;
+}
+
+.main footer p { 
+  line-height: 1.7em;
+  padding: 0 0 10px 0;
+}
+
+.homeBlock3 {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  float: left;
+  margin-bottom: 20px;
+  min-height: 1px; // to keep empty block in place
+  padding: 0 10px;
+  position: relative;
+  width: 33.33%;
+}
+
+.grid {
+  margin: 0 -10px; /* to eliminate homeBlock paddings */
+  margin-bottom: 20px;
+}
+
+.form_settings { 
+  margin: 15px 0 0 0;
+}
+
+.form_settings .checkbox { 
+  background: none;
+  border: 0;
+  margin: 4px 0; 
+  padding: 0; 
+  width: 14px;
+}
+  
+.form_settings input, .form_settings textarea { 
+  -moz-border-radius: 7px 7px 7px 7px;
+  -webkit-border: 7px 7px 7px 7px;  
+  background: #EFF8FB; 
+  border-radius: 7px 7px 7px 7px;
+  border: 1px solid #C6E7F0; 
+  color: #47433F;
+  font: 100% arial; 
+  padding: 5px; 
+  width: 299px; 
+}
+
+.form_settings p { 
+  padding: 0 0 4px 0;
+}
+
+.form_settings select { 
+  width: 310px;
+}
+
+.form_settings span { 
+  float: left; 
+  text-align: left;
+  width: 200px; 
+}
+
+.form_settings textarea, .form_settings select { 
+  font: 100% arial; 
+  width: 299px;
+}
+
+.separator { 
+  border-bottom: 1px solid #FFF;
+  border-top: 1px solid #D9D5CF;
+  height: 0;
+  margin: 0 0 20px 0;
+  width: 100%;
+}
+
+/**
+Stylesheet for SooperFish by www.SooperThemes.com
+Author: Jurriaan Roelofs
+**/
+
+/* Configuration of menu width */
+.main ul.level1 ul,.main ul.level1 ul li { 
+  width: 200px;
+}
+
+.main ul.level1 ul ul { 
+  margin: 0 0 0 200px;
+}
+
+/* Framework for proper showing/hiding/positioning */
+ul.level1,ul.level1 * { 
+  margin: 0;
+  padding: 0;
+}
+
+ul.level1 { 
+  display: block;
+  position: relative;
+}
+  
+ul.level1 li { 
+  display: block;
+  float: left;
+  list-style: none;
+  position: relative;
+}
+  
+ul.level1 li:hover { 
+  visibility: inherit; /* fixes IE7 'sticky bug' */ 
+}
+
+ul.level1 a { 
+  display: block;
+  position: relative;
+}
+  
+ul.level1 ul { 
+  left: -999999px;
+  left: 0;
+  position: absolute;
+  top: auto;
+  width: 150px; 
+}
+  
+ul.level1 ul a { 
+  zoom: 1; /* IE6/7 fix */ 
+}
+
+ul.level1 ul li { 
+  float: left; 
+  width: 150px;
+}
+  
+ul.level1 ul ul { 
+  top: 0;
+  margin: 0 0 0 150px;
+}
+
+ul.level1 li:hover ul,ul.level1 li:focus ul,ul.level1 li.sf-hover ul, 
+ul.level1 ul li:hover ul,ul.level1 ul li:focus ul,ul.level1 ul li.sf-hover ul,
+ul.level1 ul ul li:hover ul,ul.level1 ul ul li:focus ul,ul.level1 ul ul li.sf-hover ul,
+ul.level1 ul ul ul li:hover ul,ul.level1 ul ul ul li:focus ul,ul.level1 ul ul ul li.sf-hover ul { 
+  left: auto;
+}
+  
+ul.level1 li:hover ul ul,ul.level1 li:focus ul ul,ul.level1 li.sf-hover ul ul,
+ul.level1 ul li:hover ul ul,ul.level1 ul li:focus ul ul,ul.level1 ul li.sf-hover ul ul,
+ul.level1 ul ul li:hover ul ul,ul.level1 ul ul li:focus ul ul,ul.level1 ul ul li.sf-hover ul ul,
+ul.level1 ul ul ul li:hover ul ul,ul.level1 ul ul ul li:focus ul ul,ul.level1 ul ul ul li.sf-hover ul ul { 
+  left: -999999px;
+}
+
+/* autoArrows CSS */
+span.sf-arrow { 
+  background: url(images/arrows-white.png) no-repeat 0 0;
+  display: block;
+  font-size: 1px;
+  height: 7px;
+  overflow: hidden; 
+  position: absolute;
+  right: 5px;
+  top: 20px;
+  width: 7px;
+}
+
+ul ul span.sf-arrow { 
+  background-position: 0 100%;
+  right: 10;
+  top: 20px;
+}

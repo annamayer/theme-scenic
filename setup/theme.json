@@ -1,0 +1,54 @@
+{
+    "title": "Scenic",
+    "version": "1.00",
+    "doctype": "HTML5", /* HTML5, XHTML1_STRICT, XHTML1_TRANSITIONAL, XHTML1_FRAMESET, HTML4_STRICT, HTML4_TRANSITIONAL, HTML4_FRAMESET  */
+    "thumbnail": "thumbnail.png",
+    "author": "ImpressPages",
+    "widget": { /* Image cropping settings for widgets. Require theme reinstall to take affect. */
+        "image": {
+            "width": 1180,
+            "height": 400,
+            "bigWidth": 800, /* Lightbox */
+            "bigHeight": 600 /* Lightbox */
+        },
+        "imageGallery": {
+            "width": 305,
+            "height": 164,
+            "bigWidth": 800, /* Lightbox */
+            "bigHeight": 600 /* Lightbox */
+        },
+        "logoGallery": {
+            "width": 305,
+            "height": 295
+        },
+        "textImage": {
+            "width": 305,
+            "height": 600, /* height is flexible, setting the max */
+            "bigWidth": 800, /* Lightbox */
+            "bigHeight": 600 /* Lightbox */
+        }
+    },
+    "options": [
+        {
+            "label": "Color 1",
+            "name": "color1",
+            "type": "color",
+            "default": "#09D4FF"
+        },
+        {
+            "label": "Color 2",
+            "name": "color2",
+            "type": "color",
+            "default": "#f67f00"
+        },
+        {
+            "label": "Homepage blocks",
+            "name": "homeBlocks",
+            "type": "select",
+            "default": 3,
+            "values": [0, 2, 3, 4]
+        }
+
+    ]
+
+}

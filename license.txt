@@ -1,0 +1,14 @@
+
+
+This template is released under a Creative Commons Attribution 3.0 Licence.
+This means you are free to download and use it for personal and commercial projects.
+However, you must leave the 'design from css3templates.co.uk' link in the footer of the template.
+
+
+Used images, icons or other files as listed:
+modernizr (MIT and BSD licenses) http://www.modernizr.com/
+jQuery easing sooper (BSD license)
+Sooperfish (GPL license) http://archive.plugins.jquery.com/project/SooperFish
+Project Icons - Designed by Navdeep Raj http://www.dezinerfolio.com/freebie/project-icon-set
+News Cycle (OPEN FONT LICENSE Version 1.1)
+YanoneKaffeesatz (OPEN FONT LICENSE Version 1.1)

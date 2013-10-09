@@ -1,0 +1,218 @@
+@import 'less/ipContent/ipContent.less'; // configuration variables
+
+@import 'less/config.less'; // configuration variables
+
+body#tinymce {
+	background-color: #383c3c;
+}
+
+.ipPreviewWidget{
+}
+
+.ipPreviewWidget h1 {
+	font: 250% 'News Cycle', arial, sans-serif;
+	padding: 0 0 0.5em 0;
+	text-shadow: #000 1px 1px;
+}
+
+.sidebar .ipPreviewWidget h1 {
+	padding: 0;
+}
+
+.ipPreviewWidget h2 {
+  	font: normal 150% 'Yanone kaffeesatz', arial, sans-serif;
+  	padding: 10px 0 0 0;
+	text-shadow: none;
+}
+
+.ipPreviewWidget h3 {
+	color: #888;
+	font: italic 95% arial, sans-serif;
+	letter-spacing: normal;
+	padding: 0 0 10px 0;
+	text-shadow: none;
+}
+
+
+.ipPreviewWidget a {
+   	text-decoration: underline;
+}
+
+.ipPreviewWidget a:hover { 
+	text-decoration: none;
+}
+
+.ipWidget-IpTable table tbody tr td {
+	border-top: 1px solid #FFF;
+	padding-left: 5px;
+}
+
+.ipWidget-IpTable table tbody tr:first-child td{
+	background-color: darken(@color1, 20%);
+	border-top: none;
+	color: #FFF;
+}
+
+.ipWidget-IpText ul{
+	margin: 3em 0 2em 0;
+	padding-top: 1.5em;
+}
+
+
+.ipWidget-IpText ul li{
+	background: url(images/bullet.png) no-repeat;
+	line-height: 1.5em;
+	list-style: none;
+	margin: 0; 
+	padding: 0 0 4px 28px;
+}
+
+.ipWidget-IpTitle{
+	margin: 0;
+	padding: 0 0 5px 0;
+}
+
+
+.ipPreviewWidget td {
+	border-color: #fff;
+}
+
+.ipWidget-IpImageGallery ul {
+  margin: 0 -5px;
+}
+
+.ipWidget-IpImageGallery li{
+  width: 50%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  float: left;
+  min-height: 1px; // to keep empty block in place
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 0 5px;
+  position: relative;
+  max-width: none;
+}
+
+@media screen and (min-width: 480px){
+  .ipWidget-IpImageGallery ul {
+    margin: 0 -10px;
+  }
+
+  .ipWidget-IpImageGallery li{
+    width: 33.33%;
+    margin-bottom: 20px;
+    padding: 0 10px;
+  }
+}
+
+
+
+
+@media screen and (min-width: 940px){
+  .sidebar_container .ipWidget-IpImageGallery ul {
+    margin: 0 -5px;
+  }
+
+  .sidebar_container .ipWidget-IpImageGallery li{
+    width: 50%;
+    margin-bottom: 5px;
+    padding: 0 5px;
+  }
+}
+
+
+
+.ipWidget-IpImageGallery li img{
+  margin: none;
+}
+
+
+.ipmType-submit .ipmControl .button, .ipWidget-IpText .button { 
+	background: -webkit-gradient(linear, left top, left bottom, from(@color1), to(darken(@color1, 20%)));
+	box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	font: 140% 'Yanone Kaffeesatz', arial, sans-serif;
+	text-shadow: 1px 1px darken(@color1, 20%);
+}
+
+.ipmControl input.ipmControlSubmit{
+	-webkit-border-radius: .5em .5em .5em .5em ; 
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	background: -moz-linear-gradient(top, @color1, darken(@color1, 20%));
+	background: -webkit-gradient(linear, left top, left bottom, from(@color1), to(darken(@color1, 20%)));
+	border-radius: .5em .5em .5em .5em ;
+	border: solid 1px darken(@color1, 10%);
+	box-shadow: 0 1px 2px rgba(0,0,0,.2); 
+	color: #FFF;
+	cursor: pointer; 
+	font: 140% 'Yanone Kaffeesatz', arial, sans-serif; 
+	height: 33px;
+	margin: 0; 
+	padding: 2px 15px 3px 15px;
+	text-shadow: 1px 1px darken(@color1, 20%);
+ }
+
+ .ipmControlTextarea {
+ 	font-family: Arial, sans-serif;
+ }
+
+.ipModuleForm .ipmControlInput, .ipModuleForm .ipmControlTextarea, .ipModuleForm .ipmControlSelect {
+	color: #000;
+}
+
+.ipModuleForm .ipmControlInput:focus, .ipmControlSelect:focus, .ipModuleForm .ipmControlTextarea:focus, .ipModuleForm .ipmControlSelect:focus{
+	color: #000;
+}
+
+.ipmErrorMessage{
+	font: 100% 'Yanone Kaffeesatz', arial, sans-serif; 
+}
+
+.ipModuleForm .ipmType-radio .ipmControl label {
+	display: block;
+	margin-bottom: 5px;
+}
+
+.ipModuleForm .ipmControlRadio {
+	margin-right: 5px;
+}
+
+h1 .ipwTitle, h2 .ipwTitle, h3 .ipwTitle, h4 .ipwTitle, h5 .ipwTitle, h6 .ipwTitle{
+  font: 200% 'News Cycle', arial, sans-serif;
+  letter-spacing: 0em;
+  padding: 0 0 5px 0;
+}
+
+h1 .ipwTitle, h2 .ipwTitle, h3 .ipwTitle {
+  font: normal 140% arial, sans-serif;
+  margin: 0 0 15px 0;
+  padding: 15px 0 5px 0;
+}
+
+h2 .ipwTitle {
+  font-size: 160%;
+  padding: 9px 0 5px 0;
+}
+
+h3 .ipwTitle {
+  font-size: 140%;
+  padding: 5px 0 0 0;
+}
+
+.ipWidget-IpTable table {
+  margin: 10px 0 30px 0;
+}
+
+.ipWidget-IpTable table tr th, .ipWidget-IpTable table tr td {
+  background: @color1;
+  color: #FFF;
+  padding: 7px 4px;
+  text-align: left;
+}
+
+.ipWidget-IpTable table tr td {
+  background: lighten(@color1, 20%);
+  border-top: 1px solid #FFF;
+  color: #47433F;
+}
